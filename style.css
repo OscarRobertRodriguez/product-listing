@@ -1,0 +1,487 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+/*End Reset*/
+
+
+
+/* Navigation Bar*/
+
+
+
+nav {
+    position: fixed;
+    top:0;
+    left: 0;
+    overflow: hidden;
+     width: 100%;
+     height: 4.6em;
+    background-color: #0068b8;
+    background-image: url("https://www.transparenttextures.com/patterns/ravenna.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    margin-top: 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    width: 50em;
+    padding: 0;
+}
+
+
+
+nav ul li {
+    float: left;
+
+}
+
+nav ul li a {
+    display: block;
+    padding: .7em;
+    border: 1px solid white;
+    border-radius: .5em;
+    margin-top: 1em ;
+    margin-left: 1.5em;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-variant: small-caps;
+
+}
+
+nav ul a:focus {
+    co: #fff;
+}
+
+nav ul a:hover {
+    background-color: #0068b8;
+    color: white;
+    border: 1px solid #0068b8;
+
+}
+
+nav ul a:active {
+    position:relative;
+    bottom: .3em;
+    left: .2em;
+    color: #fff;
+
+
+}
+
+/*End Navigation*/
+
+
+
+/* Clear Div*/
+
+.clear {
+    overflow: hidden;
+    clear: both;
+}
+
+/*End Clear div*/
+
+
+/* main heading */
+
+body {
+    font-size: 100%;
+    width: 100%;
+background-color: #614933;
+background-image: url("https://www.transparenttextures.com/patterns/retina-wood.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+
+h1 {
+    margin: 0 auto;
+    margin-top: 1em;
+    font-size: 8em;
+    width: 8em;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+
+.firstL {
+    color: #fff;
+}
+
+
+/* Furniture*/
+
+section {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 5em;
+}
+
+
+div.item {
+    float: left;
+    margin-left: .9em;
+    width: 19%;
+    height: 35em;
+    overflow:hidden;
+    margin-bottom: 5em;
+    background-color: #fff;
+
+
+}
+
+.item h3 {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    margin-top: .5em;
+}
+
+.item p {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.item .paraPrice {
+    margin-top: 0;
+}
+
+.item p span {
+    font-style: italic;
+    color: darkorange;
+    font-weight: bold;
+    font-size: 1.3em;
+
+}
+
+input[type="text"] {
+    margin: 0 auto;
+    width: 4em;
+    height: 2em;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 7.8em;
+    font-size: 1em;
+
+}
+
+input[type="button"] {
+    margin: 0  auto;
+    border: none;
+    width: 10em;
+    height: 3em;
+    margin-top: 2em;
+    margin-left: 6em;
+    display: block;
+    color: #fff;
+    font-family: Arial;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: center;
+    border-radius: .5em;
+    padding: .2em;
+    background-color: #f90;
+    box-shadow: 1px 1px 2px #888888;
+    background-image: linear-gradient(to top, #FF9900 60%, #FFBB44 100%);
+
+}
+
+
+
+input[type="button"]:hover {
+    color: black;
+}
+
+
+
+
+/* Cart Checkout at bottom of Website*/
+
+
+.wrapper {
+    margin: 0 auto;
+    clear: left;
+    background-color: white;
+    width: 50em;
+    height: 20em;
+    border-radius: .5em;
+}
+
+
+/* First Row in Cart Checkout*/
+
+.cartHead {
+    width: 100%;
+}
+
+
+.cartHead ul {
+    list-style-type: none;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.cartHead ul li {
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0;
+
+}
+
+.cartHead ul li:nth-child(1) {
+     margin-left: .5em;
+     font-weight: bold;
+     font-size: 1.3em;
+     margin-bottom: .3em;
+}
+
+.cartHead ul li:nth-child(2) {
+      margin-left: 13.7em;
+      margin-top: 1.7em;
+}
+
+
+.cartHead ul li:nth-child(3) {
+    margin-left: 20.2em;
+    margin-top: 1.7em;
+}
+
+/*End First Row*/
+
+
+/*Begin Cart items Checkout*/
+
+.cartItem {
+    width: 100%;
+}
+
+
+hr {
+    margin: 0;
+}
+
+.cartItem ul {
+    list-style-type: none;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.cartItem ul li {
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin-top: 1em;
+
+}
+
+.cartItem ul li:nth-child(1) {
+     margin-left: 1em;
+     font-weight: bold
+}
+
+.cartItem ul li:nth-child(2) {
+      margin-left: 15em;
+      color: #b12704;
+}
+
+
+.cartItem ul li:nth-child(3) {
+    margin-left: 19.6em;
+}
+
+
+/*End Cart Items checkout*/
+
+
+
+/*Begin Subtotal price/text */
+
+
+hr.myHrLine {
+   margin:10px;
+}
+
+
+
+.subTotal {
+    width: 100%;
+}
+
+
+.subTotal ul {
+    list-style-type: none;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.subTotal ul li {
+    display: block;
+    float: left;
+
+}
+
+.subTotal ul li input[type="text"] {
+  font-size: .8em;
+  width: 7em;
+  margin: 0;
+  margin-left: 1.3em;
+
+}
+
+.subTotal ul li:nth-child(1) {
+
+
+}
+
+.subTotal ul li input[type="button"] {
+    margin: 0 ;
+    border: none;
+    width: 6em;
+    height: 2em;
+    margin-top: 0;
+    margin-left: 1em;
+    color: #fff;
+    font-family: Arial;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: center;
+    border-radius: .5em;
+    padding: .2em;
+    background-color: grey;
+    box-shadow: 1px 1px 2px #888888;
+    background-image: linear-gradient(to top, grey 60%, lightgrey 100%);
+    outline: none;
+}
+
+.subTotal ul li input[type="button"]:hover {
+    background-color: darkgrey;
+    background-image: none;
+}
+
+.subTotal ul li:nth-child(2) {
+
+}
+
+.subTotal ul li:nth-child(3) {
+     font-weight: bold;
+    font-size: 1.1em;
+    margin: 0;
+    margin-left: 21em;
+
+}
+
+.subPrice {
+    color: #b12704;
+}
+
+
+/*End Subtotal price/text*/
+
+
+
+/* Checkout and Keep shop buttons*/
+
+
+.checkout {
+    width: 100%;
+}
+
+
+.checkout ul {
+    list-style-type: none;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.checkout ul li {
+    display: block;
+    float: left;
+    height: 5em;
+
+}
+
+.checkout ul li:nth-child(1) {
+    width: 15em;
+    margin-left:9em;
+    margin-top: 2em;
+
+}
+
+
+.checkout ul li:nth-child(2) {
+    margin-left: -5em;
+    margin-top: 2em;
+
+}
+
+
+/*End keep shop and checkout buttons*/
+
+/* Footer */
+
+footer {
+    margin: 0 auto;
+    margin-top: 10em;
+    margin-bottom: 1em;
+    color: black;
+    overflow: hidden;
+    text-align: center;
+    font-size: small;
+    font-variant: small-caps;
+    clear: left;
+
+}
