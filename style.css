@@ -1,4 +1,3 @@
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -48,440 +47,451 @@ table {
     border-spacing: 0;
 }
 
+/*End RESET*/
 
+/* Top Nav Fixed*/
 
-
-/*End Reset*/
-
-
-
-/* Navigation Bar*/
-
-
-
-nav {
+.topFixedNav {
     position: fixed;
-    top:0;
+    z-index: 1050;
+    width: 100%;
+    top: 0;
     left: 0;
-    overflow: hidden;
-     width: 100%;
-     height: 4.6em;
-    background-color: #0068b8;
-    background-image: url("https://www.transparenttextures.com/patterns/ravenna.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-    margin-top: 0;
+    right: 0;
+    height: 40px;
+    background-color: #000;
 }
 
 
-nav ul {
-    list-style-type: none;
+.containerFixed {
+    width: 960px;
     margin: 0 auto;
-    width: 50em;
-    padding: 0;
 }
 
-
-
-nav ul li {
-    float: left;
-
+.containerFixed  ul li {
+    display: inline-block;
+    text-align: center;
 }
 
-nav ul li a {
+.containerFixed input[type="text"] {
+    width: 200px;
+    height: 28px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    padding-left:25px;
+    font-size: 13px;
+    font-family:  "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: .5px;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+
+    /* search icon */
+
+    background: #fff url("//cdn.shopify.com/s/files/1/0796/3401/t/13/assets/search.jpg?2103006388731067053") no-repeat 6px;
+}
+
+.fixedHeading {
     display: block;
-    padding: .7em;
-    border: 1px solid white;
-    border-radius: .5em;
-    margin-top: 1em ;
-    margin-left: 1.5em;
+    width: 300px;
+    margin: 0 auto;
+    margin-left: 10em;
+    height: 30px;
+    line-height: 30px;
+
+    /* Typography*/
+    font-size: .85em;
+    font-family: "Lato";
+    font-weight: 200;
+    text-transform: uppercase;
     text-decoration: none;
-    background-color: white;
-    color: black;
-    font-variant: small-caps;
-
-}
-
-nav ul a:focus {
-    co: #fff;
-}
-
-nav ul a:hover {
-    background-color: #0068b8;
-    color: white;
-    border: 1px solid #0068b8;
-
-}
-
-nav ul a:active {
-    position:relative;
-    bottom: .3em;
-    left: .2em;
     color: #fff;
+    letter-spacing: 1px;
+}
 
+.innerUl {
+    display: inline-block;
+    margin-left: 5.5em
+}
+
+.innerUl  a {
+    display: inline-block;
+    margin-left: 1.5em;
+    color:#b6b6b6;
+    text-decoration: none;
+    font-family: "Lato",sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 300;
 
 }
 
-/*End Navigation*/
-
-
-
-/* Clear Div*/
-
-.clear {
-    overflow: hidden;
-    clear: both;
-}
-
-/*End Clear div*/
-
-
-/* main heading */
-
-body {
-    font-size: 100%;
-    width: 100%;
-background-color: #614933;
-background-image: url("https://www.transparenttextures.com/patterns/retina-wood.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+.cart {
+    background: url("//cdn.shopify.com/s/files/1/0796/3401/t/13/assets/cart.png?2103006388731067053") no-repeat left 7px;
+    padding-left: 22px;
+    width: 4.2em;
 }
 
 
-h1 {
-    margin: 0 auto;
-    margin-top: 1em;
-    font-size: 8em;
-    width: 8em;
+
+/* hover effects for log in  cart join links*/
+
+.innerUl  a:hover {
+    color:#fff;
+    transition: color 1s ease;
+
+}
+
+/*End Top Nav Fixed*/
+
+
+
+.navContainer {
+    width: 960px;
+    margin: 3em auto 0;
+}
+
+.navContainer h1 {
+    font-size: 2em;
+    font-family: "Lato", sans-serif;
     text-align: center;
-    font-variant: small-caps;
-}
-
-
-.firstL {
-    color: #fff;
-}
-
-
-/* Furniture*/
-
-section {
-    margin: 0 auto;
-    width: 100%;
-    margin-top: 5em;
-}
-
-
-div.item {
-    float: left;
-    margin-left: .9em;
-    width: 19%;
-    height: 35em;
-    overflow:hidden;
-    margin-bottom: 5em;
-    background-color: #fff;
-
-
-}
-
-.item h3 {
-    text-align: center;
-    font-variant: small-caps;
-    font-size: 1.5em;
-    margin-top: .5em;
-}
-
-.item p {
-    text-align: center;
-    margin-top: 1.5em;
-}
-
-.item .paraPrice {
-    margin-top: 0;
-}
-
-.item p span {
-    font-style: italic;
-    color: darkorange;
-    font-weight: bold;
-    font-size: 1.3em;
-
-}
-
-input[type="text"] {
-    margin: 0 auto;
-    width: 4em;
-    height: 2em;
-    text-align: center;
-    margin-top: 1em;
-    margin-left: 7.8em;
-    font-size: 1em;
-
-}
-
-input[type="button"] {
-    margin: 0  auto;
-    border: none;
-    width: 10em;
-    height: 3em;
     margin-top: 2em;
-    margin-left: 6em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
+
+
+/*Nav */
+
+.mainNav {
+  width: 100%;
+  margin: 0 auto;
+    border-top: 1px solid #b6b6b6;
+    border-bottom: 1px solid #b6b6b6;
+}
+
+.mainNav > ul {
+    width: 760px;
+    margin: 0 auto;
+}
+
+.mainNav * li {
+    display: inline-block;
+    margin-left: 4em;
+
+}
+
+.mainNav * * a {
     display: block;
-    color: #fff;
-    font-family: Arial;
-    font-size: 90%;
-    font-weight: bold;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    color: #000;
+    line-height: 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    letter-spacing: 1px;
+
+}
+
+.mainNav * * a:hover {
+  font-weight: 300;
+}
+
+
+/* Start Main Section*/
+
+.mainContainer {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 2.5em;
+}
+
+.mainContainer h1 {
     text-align: center;
-    border-radius: .5em;
-    padding: .2em;
-    background-color: #f90;
-    box-shadow: 1px 1px 2px #888888;
-    background-image: linear-gradient(to top, #FF9900 60%, #FFBB44 100%);
-
+    font-size: 1.6em;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    color: #525252;
+    font-weight:300;
+    letter-spacing: 1px;
 }
 
-
-
-input[type="button"]:hover {
-    color: black;
-}
-
-
-
-
-/* Cart Checkout at bottom of Website*/
-
-
-.wrapper {
-    margin: 0 auto;
-    clear: left;
-    background-color: white;
-    width: 50em;
-    height: 20em;
-    border-radius: .5em;
-}
-
-
-/* First Row in Cart Checkout*/
-
-.cartHead {
-    width: 100%;
-}
-
-
-.cartHead ul {
-    list-style-type: none;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.cartHead ul li {
-    display: block;
+.mainContainer > p {
     float: left;
-    font-weight: bold;
-    margin-top: 1em;
-    margin-bottom: 0;
-
+    margin-top: 3.5em;
 }
 
-.cartHead ul li:nth-child(1) {
-     margin-left: .5em;
-     font-weight: bold;
-     font-size: 1.3em;
-     margin-bottom: .3em;
+.mainContainer > form {
+    float: right;
+    margin-top: 3.5em;
+    margin-right: -.5em;
+    width: 15em;
+    height: 3em;
 }
 
-.cartHead ul li:nth-child(2) {
-      margin-left: 13.7em;
-      margin-top: 1.7em;
-}
-
-
-.cartHead ul li:nth-child(3) {
-    margin-left: 20.2em;
-    margin-top: 1.7em;
-}
-
-/*End First Row*/
-
-
-/*Begin Cart items Checkout*/
-
-.cartItem {
-    width: 100%;
-}
-
-
-hr {
-    margin: 0;
-}
-
-.cartItem ul {
-    list-style-type: none;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.cartItem ul li {
-    display: block;
-    float: left;
-    font-weight: bold;
-    margin-top: 1em;
-
-}
-
-.cartItem ul li:nth-child(1) {
-     margin-left: 1em;
-     font-weight: bold
-}
-
-.cartItem ul li:nth-child(2) {
-      margin-left: 15em;
-      color: #b12704;
-}
-
-
-.cartItem ul li:nth-child(3) {
-    margin-left: 19.6em;
-}
-
-
-/*End Cart Items checkout*/
-
-
-
-/*Begin Subtotal price/text */
-
-
-hr.myHrLine {
-   margin:10px;
-}
-
-
-
-.subTotal {
-    width: 100%;
-}
-
-
-.subTotal ul {
-    list-style-type: none;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.subTotal ul li {
-    display: block;
-    float: left;
-
-}
-
-.subTotal ul li input[type="text"] {
-  font-size: .8em;
-  width: 7em;
-  margin: 0;
-  margin-left: 1.3em;
-
-}
-
-.subTotal ul li:nth-child(1) {
-
-
-}
-
-.subTotal ul li input[type="button"] {
-    margin: 0 ;
-    border: none;
-    width: 6em;
-    height: 2em;
-    margin-top: 0;
-    margin-left: 1em;
-    color: #fff;
-    font-family: Arial;
-    font-size: 90%;
-    font-weight: bold;
-    text-align: center;
-    border-radius: .5em;
-    padding: .2em;
-    background-color: grey;
-    box-shadow: 1px 1px 2px #888888;
-    background-image: linear-gradient(to top, grey 60%, lightgrey 100%);
+.sortBy {
+    background:url("//cdn.shopify.com/s/files/1/0796/3401/t/13/assets/select.png?2103006388731067053") no-repeat right , #fff;
+    width: 15em;
+    height: 45px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    font-family: "Lato", sans-serif;
+    color: #525252;
+    font-weight: 300;
+    font-size: 11px;
+    border-radius: 3px;
+    border: 1px solid #d9dbdc;
+    padding-left: 10px;
     outline: none;
 }
 
-.subTotal ul li input[type="button"]:hover {
-    background-color: darkgrey;
-    background-image: none;
-}
-
-.subTotal ul li:nth-child(2) {
+form label {
+    font-family: "Lato", sans-serif;
+    font-size: .75em;
 
 }
 
-.subTotal ul li:nth-child(3) {
-     font-weight: bold;
-    font-size: 1.1em;
-    margin: 0;
-    margin-left: 21em;
+.mainContainer  * a, .croc {
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    padding-left: 5px;
+    color: #000;
+    font-size: 13px;
+    font-weight: 300;
 
 }
 
-.subPrice {
-    color: #b12704;
+.mainContainer * a:hover {
+    font-weight: 400;
+    transition: color 0.3s ease;
 }
 
 
-/*End Subtotal price/text*/
+
+/* phone box layout*/
 
 
-
-/* Checkout and Keep shop buttons*/
-
-
-.checkout {
+.phonesLayout {
+    clear: both;
     width: 100%;
 }
 
+.phoneContainer {
+    display: inline-block;
+    width: 300px;
+    height: 450px;
+    margin-right: 15px;
+    margin-top: 15px;
+    border-bottom: 1px solid #D3D3D3;
+    padding-top: 1em;
 
-.checkout ul {
-    list-style-type: none;
-    margin: 0 auto;
-    overflow: hidden;
 }
 
-.checkout ul li {
+.phoneContainer img {
     display: block;
-    float: left;
-    height: 5em;
-
 }
 
-.checkout ul li:nth-child(1) {
-    width: 15em;
-    margin-left:9em;
-    margin-top: 2em;
-
-}
-
-
-.checkout ul li:nth-child(2) {
-    margin-left: -5em;
-    margin-top: 2em;
+.phoneInfo {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 15px;
+    font-family: "Lato", sans-serif;
+    color: #8D8D8D;
+    line-height: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
 
 }
 
 
-/*End keep shop and checkout buttons*/
+.phoneContainer .type {
+    font-size: 12px;
+}
 
-/* Footer */
+.phoneContainer .price {
+    color: #4f4f4f;
+
+}
+
+.phoneContainer * button {
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    font-size: 10px;
+    width: 9em;
+    height: 2em;
+    text-align: center;
+    margin-top: 8px;
+    overflow: hidden;
+    border: none;
+    border-radius: 3px;
+    background-color: #D3D3D3;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px rgba(0,0,0,0.5);
+}
+
+
+
+.phoneContainer * button:hover {
+    background-color: #fff;
+    color: #4f4f4f;
+    border: 1px solid #D3D3D3;
+}
+/* Checkout */
+
+.checkout {
+    margin: 0 auto;
+    margin-top: 4em;
+    width: 400px;
+    overflow: auto;
+    font-family: "Lato", sans-serif;
+    border: 1px solid #D3D3D3;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.checkout h1 {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #8D8D8D;
+    width: 100px;
+    margin: 0 auto 10px;
+}
+
+.checkout > p {
+ text-transform: uppercase;
+ font-size: 14px;
+  margin-top: 10px;
+}
+
+.checkoutPrice {
+    margin-left: 6.2em;
+    font-weight: bold;
+}
+
+.checkout > ul {
+    display: block;
+    height: auto;
+    font-size: 13px;
+}
+
+.checkout * li {
+    display:  inline-block;
+    margin-left: 5.5em;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+
+.checkout * li:nth-child(2) {
+    padding-left: 2em;
+}
+
+.checkout * li:nth-child(3) {
+    margin-left: 4.2em;
+}
+
+.checkout > h2 {
+    float: right;
+    text-transform: uppercase;
+    margin-right: 2.8em;
+
+}
+
+.subtotalPrice {
+   padding-left: 1em;
+}
+
+.checkout .amount {
+    padding-left: 55px;
+}
+
+.checkout small {
+    font-size: 8px;
+}
+
+
+/* promo code*/
+
+
+.promo {
+    float:left ;
+}
+
+.checkout input {
+    background: none;
+    border: 1px solid #8D8D8D;
+    width: 8em;
+    height: 1em;
+    margin: 0;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #4f4f4f;
+    padding: 2px;
+    font-size: 12px;
+    line-height: 2em;
+
+}
+
+
+
+.checkout button {
+    margin: 10px 0 0 2em;
+    height: auto;
+    line-height: 10px;
+    padding: 5px;
+    display: block;
+
+    font-family: "Lato", sans-serif;
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #8D8D8D;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+
+}
+
+
+.checkout > button {
+    clear: both;
+    margin: 8em auto 0;
+    width: 10em;
+    height: 4em;
+    font-size: 11px;
+
+
+}
+
+
+.checkout button:hover {
+    background-color: #D3D3D3;
+}
+
+
+/* footer */
 
 footer {
+    clear: both;
     margin: 0 auto;
-    margin-top: 10em;
-    margin-bottom: 1em;
-    color: black;
-    overflow: hidden;
-    text-align: center;
-    font-size: small;
-    font-variant: small-caps;
-    clear: left;
-
+    width: 280px;
+    margin-top: 15em;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    color: #8D8D8D;
+    font-size: smaller;
 }
