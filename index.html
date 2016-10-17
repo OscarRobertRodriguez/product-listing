@@ -4,6 +4,7 @@
           <meta charset="UTF-8">
           <title>Title</title>
           <link rel="stylesheet" href="CSS/main.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
           <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400" rel="stylesheet">
 </head>
 <body>
@@ -15,12 +16,12 @@
                               </li>
 
                               <li>
-                                        <a href="www.case-mate.com" class="fixedHeading"> free shipping on all us orders</a>
+                                        <a href="#" class="fixedHeading"> free shipping on all us orders</a>
                               </li>
 
                               <ul class="innerUl">
                                         <a href="#">log in</a>
-                                        <a href="#" class="cart">cart (6)</a>
+                                        <a href="#" class="cart" onclick="openCart()">cart (<span class="quantityUpdate">0</span>)</a>
                                         <a href="#">join</a>
                               </ul>
                     </ul>
@@ -62,120 +63,120 @@
 
 
           <section class="phonesLayout">
-                    <div class="phoneContainer">
+                    <div class="phoneContainer" id="item1">
 
                               <div class="zoom">
-                                        <img src="http://placehold.it/300x300">
+                                        <img src="http://lorempixel.com/300/300/abstract">
                               </div>
 
                               <div class="phoneInfo">
-                                        <p>tough case - gold</p>
+                                        <p class="itemName">Contailsap - iridescent</p>
                                         <p class="type">iPhone 7</p>
                                         <p class="price">$35</p>
                               </div>
 
                     </div>
 
-                    <div class="phoneContainer">
+                    <div class="phoneContainer" id="item2">
 
                               <div class="zoom">
-                                        <img src="http://placehold.it/300x300">
+                                        <img src="http://lorempixel.com/300/300/abstract">
                               </div>
 
                               <div class="phoneInfo">
-                                        <p>tough case - gold</p>
+                                        <p class="itemName">tough case - clear</p>
+                                        <p class="type">iPhone 7</p>
+                                        <p class="price">$45</p>
+                              </div>
+                    </div>
+
+                    <div class="phoneContainer" id="item3">
+
+                              <div class="zoom">
+                                        <img src="http://lorempixel.com/300/300/abstract">
+                              </div>
+
+                              <div class="phoneInfo">
+                                        <p class="itemName">rouserer - junk food</p>
                                         <p class="type">iPhone 7</p>
                                         <p class="price">$35</p>
                               </div>
                     </div>
 
-                    <div class="phoneContainer">
+                    <div class="phoneContainer" id="item4">
 
                               <div class="zoom">
-                                        <img src="http://placehold.it/300x300">
+                                        <img src="http://lorempixel.com/300/300/abstract">
                               </div>
 
                               <div class="phoneInfo">
-                                        <p>tough case - gold</p>
+                                        <p class="itemName">fathms - rose gold</p>
                                         <p class="type">iPhone 7</p>
                                         <p class="price">$35</p>
                               </div>
                     </div>
 
-                    <div class="phoneContainer">
+                    <div class="phoneContainer" id="item5">
 
                               <div class="zoom">
-                                        <img src="http://placehold.it/300x300">
+                                        <img src="http://lorempixel.com/300/300/abstract">
                               </div>
 
                               <div class="phoneInfo">
-                                        <p>tough case - gold</p>
+                                        <p class="itemName">jCandpany - gold</p>
                                         <p class="type">iPhone 7</p>
                                         <p class="price">$35</p>
                               </div>
                     </div>
 
-                    <div class="phoneContainer">
+                    <div class="phoneContainer" id="item6">
 
                               <div class="zoom">
-                                        <img src="http://placehold.it/300x300">
+                                        <img src="http://lorempixel.com/300/300/abstract">
                               </div>
 
                               <div class="phoneInfo">
-                                        <p>tough case - gold</p>
-                                        <p class="type">iPhone 7</p>
-                                        <p class="price">$35</p>
-                              </div>
-                    </div>
-
-                    <div class="phoneContainer">
-
-                              <div class="zoom">
-                                        <img src="http://placehold.it/300x300">
-                              </div>
-
-                              <div class="phoneInfo">
-                                        <p>tough case - gold</p>
+                                        <p class="itemName">kohasenges - smoke</p>
                                         <p class="type">iPhone 7</p>
                                         <p class="price">$35</p>
                               </div>
                     </div>
 
 
-                    <div class="phoneContainer">
+                    <div class="phoneContainer" id="item7">
 
                               <div class="zoom">
-                                        <img src="http://placehold.it/300x300">
+                                        <img src="http://lorempixel.com/300/300/abstract">
                               </div>
 
                               <div class="phoneInfo">
-                                        <p>tough case - gold</p>
+                                        <p class="itemName">strease - pikachu</p>
                                         <p class="type">iPhone 7</p>
                                         <p class="price">$35</p>
                               </div>
                     </div>
 
-                    <div class="phoneContainer">
+                    <div class="phoneContainer" id="item8">
 
                               <div class="zoom">
-                                        <img src="http://placehold.it/300x300">
+                                        <img src="http://lorempixel.com/300/300/abstract">
                               </div>
 
                               <div class="phoneInfo">
-                                        <p>tough case - gold</p>
+                                        <p class="itemName">Firecookit- moon crystal</p>
                                         <p class="type">iPhone 7</p>
                                         <p class="price">$35</p>
                               </div>
                     </div>
 
-                    <div class="phoneContainer">
+                    <div class="phoneContainer" id="item9">
 
                               <div class="zoom">
-                                        <img src="http://placehold.it/300x300">
+                                        <img src="http://lorempixel.com/300/300/abstract">
                               </div>
 
                               <div class="phoneInfo">
-                                        <p>tough case - gold</p>
+                                        <p class="itemName">kohaintman - blue</p>
                                         <p class="type">iPhone 7</p>
                                         <p class="price">$35</p>
                               </div>
@@ -185,31 +186,73 @@
 
 
           </section>
-
+      <div class="modal">
           <section class="checkout">
-                    <h1>Cart</h1>
 
-                    <ul>
-                              <li>Item</li>
-                              <li>Amount</li>
-                              <li>Price</li>
-                    </ul>
+             <h1>Shopping Cart</h1>
 
-                    <hr>
 
-                    <p>tough case - iphone 7 <span class="amount"><small>x</small> 2</span>  <span class="checkoutPrice">$70</span></p>
-                    <p>tough case - iphone 7 <span class="amount"><small>x</small> 2</span>  <span class="checkoutPrice">$70</span></p>
-                    <p>tough case - iphone 7 <span class="amount"><small>x</small> 2</span>  <span class="checkoutPrice">$70</span></p>
+             <h4 class="cartHead first">Item</h4>
+             <h4 class="cartHead second">Price</h4>
+             <h4 class="cartHead third">Qty</h4>
+             <h4 class="cartHead fourth">Total</h4>
 
-                    <hr>
-                    <div class="promo">
-                              <input type="text" placeholder=" promo code">
-                              <button value="apply">Apply</button>
-                    </div>
-                    <h2>subtotal : <span class="subtotalPrice">$210</span></h2>
 
-                    <button value="submit">Checkout</button>
+             <ul id="checkoutNameUl">
+                <!--<li class="checkoutContentsLi">-->
+
+                   <!--<div class="cartInfo imageDiv">-->
+                      <!--<img class="imageCart inline" src="http://lorempixel.com/300/300/abstract">-->
+                   <!--</div>-->
+
+
+                   <!--<div class="cartInfo itemDiv">-->
+                      <!--<p class="inline"> tough case - clear</p>-->
+                   <!--</div>-->
+
+                   <!--<div class="cartInfo priceDiv">-->
+                      <!--<p class="inline">$ 35</p>-->
+                   <!--</div>-->
+
+                   <!--<div class="cartInfo quantityDiv">-->
+                      <!--<input class="inline quantityInput" type="number" min="0" max="10" value="1">-->
+                   <!--</div>-->
+
+                   <!--<div class="cartInfo removeDiv">-->
+                      <!--<a class="removeItem" href="http://www.case-mate.com/cart/change?line=1&quantity=0">x</a>-->
+                   <!--</div>-->
+                <!--</li>-->
+             </ul>
+   <hr>
+
+             <div class="promoDiv">
+                <div class="inputPromoDiv">
+                   <input type="text" placeholder="enter promo code">
+                </div>
+                <div class="promoButtonDiv">
+                   <button class="promoButton">Apply</button>
+                </div>
+             </div>
+
+             <div class="subtotalDiv">
+                <div>
+                   <h1>Subtotal</h1>
+                </div>
+
+             </div>
+
+             <div class="subtotalAmount">
+                <strong id="checkoutPrice"></strong>
+                <small>Excluding tax and Shipping</small>
+             </div>
+
+             <div class="submitDiv">
+                <button class="submit">Checkout</button>
+             </div>
+
           </section>
+          </div>
+
 
 
           <footer>
@@ -218,6 +261,6 @@
 
 </section>
 
-
+<script src="cart.js"></script>
 </body>
 </html>
