@@ -712,10 +712,9 @@ form label {
 footer {
     clear: both;
     margin: 0 auto;
-    width: 280px;
+    width: 320px;
     margin-top: 15em;
-    padding-bottom: 1em;
-    text-transform: uppercase;
+    padding-bottom: 2em;
     font-family: "Lato", sans-serif;
     color: #8D8D8D;
     font-size: smaller;
