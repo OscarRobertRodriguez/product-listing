@@ -95,20 +95,25 @@ table {
 
 .fixedHeading {
     display: block;
-    width: 300px;
+    width: 350px;
     margin: 0 auto;
-    margin-left: 10em;
+    margin-left: 5em;
     height: 30px;
     line-height: 30px;
 
     /* Typography*/
-    font-size: .85em;
+    font-size: .7em;
     font-family: "Lato";
     font-weight: 200;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
     letter-spacing: 1px;
+}
+
+.navPromoListing {
+    color: red;
+    font-weight: bold;
 }
 
 .innerUl {
@@ -511,6 +516,37 @@ form label {
 }
 
 
+
+/* buttons*/
+.button1, .button2 {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px outset #D8D8D8;
+    background-color: #D3D3D3;
+    box-shadow: #8D8D8D;
+    outline: none;
+    -webkit-appearance: push-button;
+    font-size: 15px;
+
+}
+.button1 {
+    margin-right: 2px;
+}
+.button2 {
+    margin-left: 2px;
+}
+
+.button1:active, .button2:active {
+    position: relative;
+    top: 1px;
+    border-right: none;
+    border-bottom: none;
+    color: white;
+
+}
+
 /*for the price div*/
 
 .priceDiv {
@@ -520,21 +556,29 @@ form label {
     width: 35px;
 }
 
+.priceTotalDiv {
+    position: relative;
+    bottom: 80px;
+    left: 130px;
+    width: 35px;
+}
+
 
 
 /*For the quantity input bar*/
 .quantityDiv {
     position: relative;
     bottom: 85px;
-    left: 80px;
+    left: 60px;
     width: 35px;
 }
 
 .quantityInput {
-    width: 35px;
+    width: 25px;
     padding:5px;
     border: 1px solid #D3D3D3;
     outline: none;
+    text-align: center;
 }
 
 
@@ -550,7 +594,7 @@ form label {
 .removeDiv {
     position: relative;
     bottom: 130px;
-    left: 300px;
+    left: 250px;
     width: 20px;
 }
 
@@ -583,7 +627,7 @@ form label {
 
 
 .subtotalAmount strong {
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .subtotalAmount small {
@@ -593,6 +637,7 @@ form label {
 }
 .subtotalAmount strong , .subtotalAmount small {
     display: block;
+
 
 }
 
