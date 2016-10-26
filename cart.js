@@ -250,17 +250,21 @@ function displayInCart() {
 
 // remove object when the x symbol is pressed for that item
 function remove(ele) {
+
+   var product = ele.parentNode.previousSibling.previousSibling.previousSibling;
+   var productName = product.previousSibling.firstChild.innerHTML;
+   var cartObject = utilities.findByProductName(cart.itemsCart, productName);
+   console.log(productName);
    if (cart.promoMemory1.length > 0 || cart.promoMemory2.length > 0 || cart.promoMemory3.length > 0) {
       alert("Please reapply your discount code.");
       document.getElementById("textFieldPromo").value = "";
    }
-   var product = ele.parentNode.previousSibling.previousSibling.previousSibling;
-   var productName = product.firstChild.innerHTML;
+
    cart.promoMemory1.splice(0,1);
    cart.promoMemory2.splice(0,1);
    cart.promoMemory3.splice(0,1);
 
-   var cartObject = utilities.findByProductName(cart.itemsCart, productName);
+
 
    cart.itemsCart.splice(cartObject, 1);
 
