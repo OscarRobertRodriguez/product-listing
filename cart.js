@@ -281,7 +281,7 @@ function decrementValue(ele) {
    var inputTag = ele.nextSibling;
    var inputValue = Number(inputTag.value);
    var cartIndex = utilities.findByProductName(cart.itemsCart, productName);
-   console.log(productName);
+
 
    if (cart.itemsCart[cartIndex].name === productName && inputValue > 1) {
       cart.itemsCart[cartIndex].quantity -= 1;
@@ -295,6 +295,7 @@ function decrementValue(ele) {
    }
    else {
       cart.itemsCart.splice(cartIndex, 1);
+      document.querySelector(".quantityUpdate").innerHTML = utilities.cartTotalItems(cart.itemsCart);
       updateTotalPrice();
       displayInCart();
    }
@@ -415,7 +416,7 @@ function calculatePromo(el) {
             alert("Another code has already been applied. This price will not be lower with this code.");
          }
       }
-      else if (inputValue !== cart.promos && counter < 1 && inputValue) {
+      else if (counter < 1 && inputValue && inputValue !== 'MANIA10' && inputValue !== 'IPHONE15' && inputValue !== 'FANTASTIC5') {
          alert("Invalid promo code please make sure it's correct.");
          counter++;
       }
