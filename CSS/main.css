@@ -95,16 +95,16 @@ table {
 
 .fixedHeading {
     display: block;
-    width: 350px;
+    width: 360px;
     margin: 0 auto;
-    margin-left: 5em;
+    margin-left: 4em;
     height: 30px;
     line-height: 30px;
 
     /* Typography*/
-    font-size: .7em;
+    font-size: .8em;
     font-family: "Lato";
-    font-weight: 200;
+    font-weight: 300;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
@@ -112,8 +112,11 @@ table {
 }
 
 .navPromoListing {
-    color: red;
+    color: #fff;
+    letter-spacing: 2px;
     font-weight: bold;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .innerUl {
@@ -664,11 +667,11 @@ form label {
     position: relative;
     left: 10px;
     height: 23px;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 10px;
     outline: none;
     line-height: 5px;
-    font-variant: small-caps;
+    text-transform: uppercase;
 }
 
 .promoButton, .submit {

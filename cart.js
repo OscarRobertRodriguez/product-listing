@@ -333,7 +333,7 @@ function incrementValue(ele) {
 function calculatePromo(el) {
    var parent = el.parentNode;
    var input = parent.previousSibling.previousSibling.firstChild.nextSibling;
-   var inputValue = input.value.toUpperCase();
+   var inputValue = input.value.toUpperCase().toUpperCase();
    var totalPricePromo = Number(document.getElementById("checkoutPrice").innerHTML.replace("$", "").replace("USD", "").trim());
 
    var totalPrice = document.getElementById("checkoutPrice");
