@@ -340,7 +340,7 @@ function calculatePromo(el) {
    var subtotalDiv = document.getElementById("checkoutPrice");
    var totalItems = utilities.cartTotalItems(cart.itemsCart);
    var phoneBrand = utilities.findByProductBrand(cart.itemsCart, "iphone7");
-
+   var counter = 0;
    // alert box if trying to apply promo code to empty cart
    if (totalItems === 0) {
       alert("Your cart is empty");
@@ -415,9 +415,13 @@ function calculatePromo(el) {
             alert("Another code has already been applied. This price will not be lower with this code.");
          }
       }
-
+      else if (inputValue !== cart.promos && counter < 1 && inputValue) {
+         alert("Invalid promo code please make sure it's correct.");
+         counter++;
+      }
 
    }
+
 }
 
 
