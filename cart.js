@@ -158,7 +158,6 @@ function addToCart(event) {
    var itemName = parent.querySelector(".itemName").innerText;
    var itemImage = parent.querySelector(".zoom").childNodes[1].src;
    var type = parent.querySelector(".type").innerHTML.toLowerCase().replace(" ", "").trim();
-   console.log(type);
    var itemPrice = parseFloat(parent.querySelector(".price").innerHTML.replace("$", ""));
    var count = 1;
    var cartLength = cart.itemsCart.length;
@@ -282,8 +281,9 @@ function decrementValue(ele) {
    var inputTag = ele.nextSibling;
    var inputValue = Number(inputTag.value);
    var cartIndex = utilities.findByProductName(cart.itemsCart, productName);
+   console.log(productName);
 
-   if (cart.itemsCart[cartIndex].name === productName && inputValue > 0) {
+   if (cart.itemsCart[cartIndex].name === productName && inputValue > 1) {
       cart.itemsCart[cartIndex].quantity -= 1;
       cart.itemsCart[cartIndex].totalPrice -= cart.itemsCart[cartIndex].price;
       inputValue = isNaN(inputValue) ? 0 : inputValue;
