@@ -416,7 +416,7 @@ function calculatePromo(el) {
             alert("Another code has already been applied. This price will not be lower with this code.");
          }
       }
-      else if (counter < 1 && inputValue && inputValue !== 'MANIA10' && inputValue !== 'IPHONE15' && inputValue !== 'FANTASTIC5') {
+      else if (counter < 1 && inputValue !== 'MANIA10' && inputValue !== 'IPHONE15' && inputValue !== 'FANTASTIC5') {
          alert("Invalid promo code please make sure it's correct.");
          counter++;
       }
