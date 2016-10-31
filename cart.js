@@ -129,7 +129,7 @@ function openCart() {
 
 
 // === add event listeners to add to cart buttons === //
-for (i = 0; i < addButtons.length; i++) {
+for (var i = 0; i < addButtons.length; i++) {
    addButtons[i].addEventListener('click', addToCart);
    addButtons[i].addEventListener('click', animateBounce);
 }
@@ -144,8 +144,18 @@ function animateBounce(event) {
       parent.classList.remove("animated");
       parent.classList.remove("bounce");
    }, 1000);
+   animateRubberBand();
 }
 
+function animateRubberBand() {
+   var parent = document.querySelector(".cart");
+   parent.classList.add("animated");
+   parent.classList.add("rubberBand");
+   window.setTimeout(function () {
+      parent.classList.remove("animated");
+      parent.classList.remove("rubberBand");
+   }, 900);
+}
 
 // we use event for parameter as it references our click
 function addToCart(event) {
@@ -268,6 +278,7 @@ function remove(ele) {
    cart.itemsCart.splice(cartObject, 1);
 
    document.querySelector(".quantityUpdate").innerHTML = utilities.cartTotalItems(cart.itemsCart);
+   animateRubberBand();
    updateTotalPrice();
    displayInCart();
 
@@ -290,12 +301,14 @@ function decrementValue(ele) {
       inputValue -= 1;
       inputTag.setAttribute("value", inputValue);
       document.querySelector(".quantityUpdate").innerHTML = utilities.cartTotalItems(cart.itemsCart);
+      animateRubberBand();
       updateTotalPrice();
       displayInCart();
    }
    else {
       cart.itemsCart.splice(cartIndex, 1);
       document.querySelector(".quantityUpdate").innerHTML = utilities.cartTotalItems(cart.itemsCart);
+      animateRubberBand();
       updateTotalPrice();
       displayInCart();
    }
@@ -317,11 +330,7 @@ function incrementValue(ele) {
       inputValue += 1;
       inputTag.setAttribute("value", inputValue);
       document.querySelector(".quantityUpdate").innerHTML = utilities.cartTotalItems(cart.itemsCart);
-      updateTotalPrice();
-      displayInCart();
-   }
-   else {
-      cart.itemsCart.splice(cartIndex, 1);
+      animateRubberBand();
       updateTotalPrice();
       displayInCart();
    }
@@ -416,7 +425,7 @@ function calculatePromo(el) {
             alert("Another code has already been applied. This price will not be lower with this code.");
          }
       }
-      else if (counter < 1 && inputValue !== 'MANIA10' && inputValue !== 'IPHONE15' && inputValue !== 'FANTASTIC5') {
+      else if (counter < 1 && inputValue !== 'MANIA10' && inputValue !== 'IPHONE15' && inputValue !== 'FANTASTIC5' && inputValue.length > 0) {
          alert("Invalid promo code please make sure it's correct.");
          counter++;
       }
