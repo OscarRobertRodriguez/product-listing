@@ -72,7 +72,7 @@ var utilities = {
 
 };
 
-// random promo generator text for top fixed nav 
+// random promo generator text for top fixed nav
 (function () {
    var randomGeneratorNavPromo = [
       {
@@ -85,7 +85,7 @@ var utilities = {
          text: "Use <span class='navPromoListing'>FANTASTIC5</span> for 5% off your total order"
       }
    ];
-   var randomGeneratorNavPromo = randomGeneratorNavPromo[Math.floor(Math.random() * randomGeneratorNavPromo.length)];
+    randomGeneratorNavPromo = randomGeneratorNavPromo[Math.floor(Math.random() * randomGeneratorNavPromo.length)];
    document.querySelector(".fixedHeading").innerHTML = randomGeneratorNavPromo.text;
 })();
 
@@ -105,17 +105,14 @@ var cart = {
 
 
 var addButtons = document.getElementsByClassName("zoom");
-var modal = document.querySelector(".modal");
-var cartBtn = document.querySelector(".cart");
-var closeCart = document.querySelector(".close");
-var itemContainer = document.getElementById("item1");
+
+
 
 
 // opens cart in a modal window when cart link is pressed
 function openCart() {
    var modal = document.querySelector(".modal");
-   var cartBtn = document.querySelector(".cart");
-   var closeCart = document.querySelector(".close");
+   // var cartBtn = document.querySelector(".cart");
 
    modal.style.display = "block";
 // closes modal window when you click on window
@@ -136,7 +133,6 @@ for (var i = 0; i < addButtons.length; i++) {
 
 // creates a bounce effect when item is clicked to add to cart
 function animateBounce(event) {
-   var topParent = event.target.parentNode;
    var parent = event.target;
    parent.classList.add("animated");
    parent.classList.add("bounce");
@@ -169,7 +165,6 @@ function addToCart(event) {
    var itemImage = parent.querySelector(".zoom").childNodes[1].src;
    var type = parent.querySelector(".type").innerHTML.toLowerCase().replace(" ", "").trim();
    var itemPrice = parseFloat(parent.querySelector(".price").innerHTML.replace("$", ""));
-   var count = 1;
    var cartLength = cart.itemsCart.length;
    // find is a function that verifies if itemId exist in cart if it does we skip and add to quantity
    var cartIndex = utilities.find(cart.itemsCart, itemId);
@@ -263,7 +258,6 @@ function remove(ele) {
    var product = ele.parentNode.previousSibling.previousSibling.previousSibling;
    var productName = product.previousSibling.firstChild.innerHTML;
    var cartObject = utilities.findByProductName(cart.itemsCart, productName);
-   console.log(productName);
    if (cart.promoMemory1.length > 0 || cart.promoMemory2.length > 0 || cart.promoMemory3.length > 0) {
       alert("Please reapply your discount code.");
       document.getElementById("textFieldPromo").value = "";
@@ -347,7 +341,6 @@ function calculatePromo(el) {
    var totalPricePromo = Number(document.getElementById("checkoutPrice").innerHTML.replace("$", "").replace("USD", "").trim());
 
    var totalPrice = document.getElementById("checkoutPrice");
-   var subtotalDiv = document.getElementById("checkoutPrice");
    var totalItems = utilities.cartTotalItems(cart.itemsCart);
    var phoneBrand = utilities.findByProductBrand(cart.itemsCart, "iphone7");
    var counter = 0;
@@ -369,7 +362,7 @@ function calculatePromo(el) {
                cart.promoMemory1.push(inputValue);
                totalPricePromo *= cart.promos[promo];
                totalPrice.innerHTML = '$ ' + totalPricePromo.toFixed(2) + ' USD';
-               console.log(cart.promoMemory1);
+
             }
          }
          else if (inputValue === 'MANIA10' && cart.promoMemory1.length > 0) {
@@ -401,7 +394,6 @@ function calculatePromo(el) {
          }
          else if (inputValue === "FANTASTIC5" && cart.promoMemory3.length < 1 && cart.promoMemory1.length === 0 && cart.promoMemory2.length === 0) {
             cart.promoMemory3.push(inputValue);
-            console.log(cart.promoMemory3);
             totalPricePromo *= cart.promos[promo];
             totalPrice.innerHTML = '$ ' + totalPricePromo.toFixed(2) + ' USD';
 
