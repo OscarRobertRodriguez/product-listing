@@ -39,6 +39,12 @@
 		"oAP": "\/build\/.idea\/workspace.xml",
 		"oF": 0
 		},
+	"\/build": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/build",
+		"oF": 0
+		},
 	"\/cart.js": {
 		"ft": 64,
 		"mi": 1,
@@ -56,11 +62,11 @@
 		"oA": 0,
 		"oAP": "\/build\/CSS\/main.css",
 		"oF": 2,
-		"oS": 3
+		"oS": 0
 		},
 	"\/images\/blackResize.png": {
 		"ft": 32768,
-		"iS": 15076,
+		"iS": 25132,
 		"oA": 0,
 		"oAP": "\/build\/images\/blackResize.png",
 		"oF": 0,
@@ -68,7 +74,7 @@
 		},
 	"\/images\/iphoneGoldResize.png": {
 		"ft": 32768,
-		"iS": 20510,
+		"iS": 30700,
 		"oA": 0,
 		"oAP": "\/build\/images\/iphoneGoldResize.png",
 		"oF": 0,
