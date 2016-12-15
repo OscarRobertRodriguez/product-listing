@@ -39,12 +39,6 @@
 		"oAP": "\/build\/.idea\/workspace.xml",
 		"oF": 0
 		},
-	"\/build": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/build",
-		"oF": 0
-		},
 	"\/cart.js": {
 		"ft": 64,
 		"mi": 1,
@@ -66,7 +60,7 @@
 		},
 	"\/images\/blackResize.png": {
 		"ft": 32768,
-		"iS": 25132,
+		"iS": 15076,
 		"oA": 0,
 		"oAP": "\/build\/images\/blackResize.png",
 		"oF": 0,
@@ -74,10 +68,10 @@
 		},
 	"\/images\/iphoneGoldResize.png": {
 		"ft": 32768,
-		"iS": 30700,
+		"iS": 20510,
 		"oA": 0,
 		"oAP": "\/build\/images\/iphoneGoldResize.png",
-		"oF": 1,
+		"oF": 0,
 		"opt": 1
 		},
 	"\/index.html": {
@@ -103,6 +97,25 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/source\/cart.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/cart.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/source\/CSS\/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/CSS\/main.css",
+		"oF": 0,
+		"oS": 0
 		}
 	},
 "hooks": [
@@ -114,7 +127,7 @@
 	"displayValue": "product-listing",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_orange",
-	"lastBuiltDate": 503451616
+	"lastBuiltDate": 503452690
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
